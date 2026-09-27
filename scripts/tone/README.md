@@ -1,4 +1,4 @@
-# Throttle Tone Generate Function Script
+# Throttle Tone Generating Function Script
 
 ## Description
 
@@ -35,6 +35,16 @@ If a global variable is not assigned (=0), the default value will be used.
 You can disable the checking of global variables by setting this value in the script:
 
 `local USE_GLOBAL_VARIABLES = false`
+
+Modify these lines to change the defaults in the script:
+
+`local PLAY_DURRATION_MS = 100`
+
+`local MIN_FREQ = 300`
+
+`local MAX_FREQ = 800`
+
+`local MIN_THROTTLE = -950`
 
 
 ### Installing
