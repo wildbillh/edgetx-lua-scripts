@@ -53,8 +53,10 @@ Copy tone.lua to the SCRIPTS/FUNCTIONS folder of your transmitter. Select LUA as
 special function and then select the tone script. 
 
 ### Tips
-If the tones start to stack up, set the Duration down until there is a slight pause between tones. This 
-gives a more realistic engine sound. 
+- If the tones start to stack up, set the Duration down until there is a slight pause between tones. This 
+gives a more realistic engine sound.
+- In order to see new changes based on the global variables, you may need to disable and then enable your
+special function to unload and reload the script into memory.  
 
 
 ## License
