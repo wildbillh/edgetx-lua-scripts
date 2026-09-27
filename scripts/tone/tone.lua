@@ -29,9 +29,6 @@
  SOFTWARE.
  ]]
 
-
-
-
 -- Constants
 
 -- The values for duration, min frequency, max frequency and min throttle can be stored
@@ -40,14 +37,12 @@
 
 local USE_GLOBAL_VARIABLES = true
 
-
 -- My radio has 15 global variables available. If yours has fewer, these values need to be changed. 
 -- Global variable indexes
 local GVI_DURATION = 11
 local GVI_MIN_FREQ = 12
 local GVI_MAX_FREQ = 13
 local GVI_MIN_THROTTLE = 14
-
 
 -- Defaults. Note these can be overwritten if Global Variables are utilized.
 
@@ -68,7 +63,6 @@ local FREQ_PER_THROTTLE_STEPS = FREQ_STEPS / THROTTLE_STEPS
 
 -- A placeholder for the throttle id 
 local throttleId = nil
-
 
 -- --------------------------- Required init function ------------------------
 local function init ()
@@ -127,8 +121,7 @@ local function init ()
         FREQ_STEPS = MAX_FREQ - MIN_FREQ
         THROTTLE_STEPS = 1024 - MIN_THROTTLE
         FREQ_PER_THROTTLE_STEPS = FREQ_STEPS / THROTTLE_STEPS
-    end
-    
+    end 
 end
 
 -- --------------------------- Required run function ---------------------------------
@@ -151,11 +144,9 @@ local function run()
     end
 end
 
-
 -- -------------------------- Required background function ---------------------------
 local function background()
 end
-
 
 -- ----------------------------------------------------------------------------
 return { run = run, background=background, init=init}
